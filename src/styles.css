@@ -6,7 +6,7 @@ body {
 .app {
     background-color: #fff;
     max-width: 600px;
-    margin: 45px auto;
+    margin: 40px auto;
     border-radius: 15px;
     box-shadow: 0px 30px 50px rgba(56, 43, 87, 0.250);
 }
@@ -62,8 +62,8 @@ body {
     justify-content: flex-end;
     font-size: 18px;
     position: relative;
-    right: 83px;
-    bottom: 100px;
+    right: 95px;
+    bottom: 90px;
 }
 
 footer {
@@ -82,19 +82,35 @@ footer {
     bottom: 100px;
 }
 
-.container {
+
+.weather-forecast {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    bottom: 60px;
     position: relative;
-    left: 50px;
-    bottom: 55px;
+}
+
+.weather-forecast-date {
     text-align: center;
-    padding: 10px auto;
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
 }
 
-.weatherForecastDate{
-    font-weight: 550;
+.weather-forecast-icon {
+    font-size: 38px;
+    text-align: center;
 }
 
-.weatherDailyTemperature{
-    opacity: 80%;
+.weather-forecast-temperatures {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
+.weather-forecast-temperature {
+    padding: 0 10px;
+}
