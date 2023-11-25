@@ -81,3 +81,20 @@ footer {
     left: 253px;
     bottom: 100px;
 }
+
+.container {
+    position: relative;
+    left: 50px;
+    bottom: 55px;
+    text-align: center;
+    padding: 10px auto;
+}
+
+.weatherForecastDate{
+    font-weight: 550;
+}
+
+.weatherDailyTemperature{
+    opacity: 80%;
+}
+
