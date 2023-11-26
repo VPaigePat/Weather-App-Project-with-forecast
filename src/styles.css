@@ -1,5 +1,5 @@
 body {
-    background-color: #e5e3eb;
+    background-color: #a390df;
     font-family: 'Prata', serif;
 }
 
@@ -100,8 +100,9 @@ footer {
 }
 
 .weather-forecast-icon {
-    font-size: 38px;
-    text-align: center;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
 }
 
 .weather-forecast-temperatures {
