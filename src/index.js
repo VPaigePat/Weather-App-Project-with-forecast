@@ -36,9 +36,18 @@ function updateWeatherInfo(response) {
     refreshWind.innerHTML = `${response.data.wind.speed} km/h`;
     updateDescription.innerHTML = response.data.condition.description;
     updateTime.innerHTML = formateDate(date);
+
+    getForecast(response.data.city);
 }
 
-function displayForecast() {
+function getForecast(city){
+    let apiKey = "dc0f5o3ab47902302a4t6c2308650943";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+    axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+    console.log(response.data)
 let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
 let forecastHtml = "";
 
@@ -66,4 +75,4 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Montreal");
-displayForecast();
+
